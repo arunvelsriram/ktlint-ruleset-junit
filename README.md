@@ -2,6 +2,8 @@
 
 Custom [ktlint](https://github.com/pinterest/ktlint) ruleset for linting [JUnit](https://junit.org/junit5/) tests.
 
+[Link to bintray](https://bintray.com/arunvelsriram/maven/ktlint-ruleset-junit)
+
 ## Rules
 
 `junit-test-description` - Checks if JUnit test description follows backticks style. For example,
@@ -38,8 +40,8 @@ dependencies {
 
 ### Development environment
 
-* [OpenJDK11](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+* Install [OpenJDK11](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
+* Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 ### Run test and build:
 
