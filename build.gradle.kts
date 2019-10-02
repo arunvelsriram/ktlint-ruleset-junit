@@ -4,7 +4,7 @@ plugins {
     kotlin("jvm") version "1.3.50"
 }
 
-group = "dev.arunvelsriram.ktlint"
+group = "dev.arunvelsriram.ktlint.rulesets.junit"
 version = "1.0.0"
 
 repositories {
