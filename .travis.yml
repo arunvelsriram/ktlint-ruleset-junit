@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - openjdk11
+script:
+  - "./gradlew clean build"
+
+deploy:
+  provider: bintray
+  file: build/libs/ktlint-ruleset-junit-*.jar
+  on:
+    tags: true
