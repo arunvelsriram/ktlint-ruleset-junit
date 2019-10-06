@@ -46,7 +46,7 @@ bintray {
         description = "Custom ktlint ruleset for linting JUnit tests."
         setLabels("kotlin", "ktlint", "junit")
         publish = true
-        override = true
+        override = false
         publicDownloadNumbers = true
         setLicenses("Unlicense")
         vcsUrl = "https://github.com/arunvelsriram/ktlint-ruleset-junit.git"
