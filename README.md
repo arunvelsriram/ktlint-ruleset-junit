@@ -15,6 +15,15 @@ fun `should add two numbers`() {
 }
 ```
 
+`junit-test-assertion` - Checks if JUnit test asserts anything. For example,
+
+```kotlin
+@Test
+fun `should pass when test body asserts`() {
+    assertTrue(true)
+}
+```
+
 ## Setup
 
 * Add repository:
