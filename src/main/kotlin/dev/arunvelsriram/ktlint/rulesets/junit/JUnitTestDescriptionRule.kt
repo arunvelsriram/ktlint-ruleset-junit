@@ -5,7 +5,7 @@ import org.jetbrains.kotlin.com.intellij.lang.ASTNode
 import org.jetbrains.kotlin.psi.KtFunction
 import org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes
 
-class JUnitTestDescriptionRule : Rule("junit-test-description") {
+class JUnitTestDescriptionRule : Rule("junit-backticked-test-description") {
 
     override fun visit(
         node: ASTNode,

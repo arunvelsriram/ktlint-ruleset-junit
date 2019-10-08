@@ -6,7 +6,7 @@ Custom [ktlint](https://github.com/pinterest/ktlint) ruleset for linting [JUnit]
 
 ## Rules
 
-`junit-test-description` - Checks if JUnit test description follows backticks style. For example,
+`junit-backticked-test-description` - Checks if JUnit test description follows backticks style. For example,
 
 ```kotlin
 @Test
@@ -15,7 +15,7 @@ fun `should add two numbers`() {
 }
 ```
 
-`junit-test-assertion` - Checks if JUnit test asserts anything. For example,
+`junit-test-without-assertion` - Checks if JUnit test asserts anything. For example,
 
 ```kotlin
 @Test

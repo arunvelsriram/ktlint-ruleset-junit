@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test
 
 class MaximumIgnoredTestRuleTest {
 
-    private val ruleId = "maximum-ignored-test"
+    private val ruleId = "junit-maximum-ignored-tests"
     private val lintErrorMessage = "Number of ignored tests is greater than Threshold (5)"
 
     @Test

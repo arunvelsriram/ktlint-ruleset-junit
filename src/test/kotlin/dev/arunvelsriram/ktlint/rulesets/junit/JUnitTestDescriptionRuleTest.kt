@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test
 
 class JUnitTestDescriptionRuleTest {
 
-    private val ruleId = "junit-test-description"
+    private val ruleId = "junit-backticked-test-description"
     private val lintErrorMessage = "Test description should be inside backticks (e.g., `should add two numbers`)"
 
     @Test

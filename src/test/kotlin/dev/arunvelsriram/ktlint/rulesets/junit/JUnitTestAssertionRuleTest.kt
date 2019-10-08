@@ -7,6 +7,9 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class JUnitTestAssertionRuleTest {
+
+    private val ruleId = "junit-test-without-assertion"
+
     @Test
     fun `should emit lint error when test body does not assert`() {
         val code = """
@@ -16,11 +19,10 @@ class JUnitTestAssertionRuleTest {
             }
         """.trimIndent()
 
-        val rule = JUnitTestAssertionRule()
-        val result = rule.lint(code)
+        val result = JUnitTestAssertionRule().lint(code)
 
         val expected =
-            listOf(LintError(2, 28, rule.id, JUnitTestAssertionRule.LINT_ERROR_MESSAGE))
+            listOf(LintError(2, 28, ruleId, JUnitTestAssertionRule.LINT_ERROR_MESSAGE))
         assertEquals(expected, result, "Lint should fail if test does not assert")
     }
 
@@ -34,6 +36,7 @@ class JUnitTestAssertionRuleTest {
         """.trimIndent()
 
         val result = JUnitTestAssertionRule().lint(code)
+
         assertTrue(result.isEmpty(), "If an assertion is present, lint should pass")
     }
 }
