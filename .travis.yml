@@ -5,8 +5,8 @@ install: skip
 script:
 - "./gradlew clean build"
 deploy:
-  provider: bintray
-  file: build/libs/ktlint-ruleset-junit-*.jar
+  provider: script
+  script: bash bintray-upload.sh
   on:
     tags: true
 env:
