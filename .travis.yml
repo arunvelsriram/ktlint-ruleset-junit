@@ -1,8 +1,11 @@
 language: java
 jdk:
   - openjdk11
+
+install: skip
+
 script:
-  - "./gradlew clean build"
+  - ./gradlew clean build
 
 deploy:
   provider: bintray
