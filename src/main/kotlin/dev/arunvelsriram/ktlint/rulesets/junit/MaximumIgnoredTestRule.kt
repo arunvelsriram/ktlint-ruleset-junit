@@ -5,6 +5,9 @@ import org.jetbrains.kotlin.com.intellij.lang.ASTNode
 import org.jetbrains.kotlin.psi.KtFunction
 import org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes
 
+/**
+This rule checks if the maximum ignored tests present exceeds the threshold (5)
+**/
 class MaximumIgnoredTestRule : Rule("maximum-ignored-test") {
 
     override fun visit(

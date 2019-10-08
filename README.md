@@ -4,26 +4,6 @@ Custom [ktlint](https://github.com/pinterest/ktlint) ruleset for linting [JUnit]
 
 [Link to bintray](https://bintray.com/arunvelsriram/maven/ktlint-ruleset-junit)
 
-## Rules
-
-`junit-test-description` - Checks if JUnit test description follows backticks style. For example,
-
-```kotlin
-@Test
-fun `should add two numbers`() {
-    assertEquals(3, add(1,2))
-}
-```
-
-`junit-test-assertion` - Checks if JUnit test asserts anything. For example,
-
-```kotlin
-@Test
-fun `should pass when test body asserts`() {
-    assertTrue(true)
-}
-```
-
 ## Setup
 
 * Add repository:
@@ -52,7 +32,7 @@ dependencies {
 * Install [OpenJDK11](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
 * Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
-### Run test and build:
+### Run test, build and generate documentation:
 
 ```bash
 ./gradlew clean build
