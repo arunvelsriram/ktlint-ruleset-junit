@@ -5,6 +5,16 @@ import org.jetbrains.kotlin.com.intellij.lang.ASTNode
 import org.jetbrains.kotlin.psi.KtFunction
 import org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes
 
+/**
+This rule checks if JUnit test asserts anything.
+
+```
+@Test
+fun `should pass when test body asserts`() {
+    assertTrue(true)
+}
+```
+**/
 class JUnitTestAssertionRule : Rule("junit-test-assertion") {
 
     override fun visit(

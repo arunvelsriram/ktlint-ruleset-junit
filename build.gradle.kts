@@ -1,9 +1,11 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.util.Date
+import org.jetbrains.dokka.gradle.DokkaTask
 
 plugins {
     kotlin("jvm") version "1.3.50"
     id("com.jfrog.bintray") version "1.8.4"
+    id("org.jetbrains.dokka") version "0.10.0"
 }
 
 group = "dev.arunvelsriram.ktlint.rulesets.junit"
@@ -27,8 +29,15 @@ dependencies {
     testImplementation("com.pinterest.ktlint:ktlint-test:0.34.2")
 }
 
+tasks.build { finalizedBy("dokka") }
+
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+val dokka by tasks.getting(DokkaTask::class) {
+    outputFormat = "markdown"
+    outputDirectory = "$rootDir/documentation"
 }
 
 val test by tasks.getting(Test::class) {
