@@ -1,14 +1,14 @@
 language: java
 jdk:
-  - openjdk11
-
+- openjdk11
 install: skip
-
 script:
-  - ./gradlew clean build
-
+- "./gradlew clean build"
 deploy:
   provider: bintray
   file: build/libs/ktlint-ruleset-junit-*.jar
   on:
     tags: true
+env:
+  global:
+    secure: hiy47h9HrXv15R6TtTYxNBCnPFgNfFQdYNSA1osuCsMFW4BqwOlzYZj031q/SMD6b94ClJXH2kkcEu9z6zKYYe4J3BosS4U1Ij818kYBKkD8K4tnTpky+OHn1sVFD53l+9lCD44fRZFVZfNf1/HJvlGyorvbk/T0hwasaIZnyY08gBLpWFhAf8rYeNtHXTlufF/8qCWnYL11ZaDEwYlUZEkxQjIqpnPTZh/FY3bpXGZJ/2doyw/YFNk/qqPPqVsveQ0OPtAwYCXj9o1Q1pYz2JAR9MS3W8vixqoq0lG4lSqHVuhftqeDG9xn6MP2498kRiBR70FWiS17F3/kAu99mO0/+LuVhsRVsW/KIS1fCbh03DVYGqg62CaVN2d3WMvZiZ6De5BXORiCP3+64DlzLlVkMMt22F7fcuA/vFfOgYk9V9x1ebpGwM4831qMWZHpbJ4GVOQQPedqwnZ7XiD/9DflLtYEWIwYO8QYRp77Q/CahQbgMvp7drMywciyunB5t9a3qCsRUVBGUpJG8pnX7FW7R4iRJnWImGnLQUyVOoVwHNSLM4y3sKyN7NCK4u4fUoPsR6zhS/kReL5LImZx83F0XNdtbNtxElUZfJ/alVmYY//mwexL1JUFil9eL5pTg+M7lWYs7aj92mIdZP7FvwcCfrS8kprFIDYq1C3CPeQ=
