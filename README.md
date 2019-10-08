@@ -1,4 +1,4 @@
-# ktlint-ruleset-junit
+# ktlint-ruleset-junit [![Build Status](https://travis-ci.org/arunvelsriram/ktlint-ruleset-junit.svg?branch=master)](https://travis-ci.org/arunvelsriram/ktlint-ruleset-junit)
 
 Custom [ktlint](https://github.com/pinterest/ktlint) ruleset for linting [JUnit](https://junit.org/junit5/) tests.
 
